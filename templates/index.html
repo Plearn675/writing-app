@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dangerous Writing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Dangerous Writing App</h1>
+
+    <div id="stats">
+        <span>Words: <span id="word-count">0</span></span>
+        <span>Time Left: <span id="timer">120</span> sec</span>
+    </div>
+
+    <textarea id="writing-area" placeholder="Start writing..."></textarea>
+
+    <div id="game-over">
+        <h2>GAME OVER</h2>
+        <p>Try again!</p>
+    </div>
+
+    <div id="blur-overlay"></div>
+
+
+    <script src="{{ url_for('static', filename='logic.js') }}"></script>
+
+</body>
+</html>
+
